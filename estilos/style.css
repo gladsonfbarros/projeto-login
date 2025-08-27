@@ -9,8 +9,8 @@
 
 body {
     background-color: #3899a2;
-    height: 100vh;
-    width: 100vw;
+    height: 90vh;
+    width: 90vw;
 }
 
 main {
@@ -24,7 +24,7 @@ section#login {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 520px;
+    height: 510px;
     width: 280px;
     background-color: #fff;
     border-radius: 20px;
@@ -44,6 +44,7 @@ section#login div#img {
 
 section#login div#form {
     display: block;
+    padding: 10px;
 }
 
 div#form h1 {
@@ -94,7 +95,7 @@ button {
     cursor: pointer;
 }
 
-a {
+main a {
     display: block;
     text-align: center;
     margin-top: 15px;
