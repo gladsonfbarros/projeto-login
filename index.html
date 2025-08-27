@@ -9,21 +9,20 @@
 <body>
     <main>
         <section id="login">
-            <div id="img">!!! FOTO !!!</div>
-            <div>
+            <div id="img"></div>
+            <div id="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça seu Login para poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="POST">
                     <label for="username">Usuário:</label>
-                    <input type="text" id="username" name="username" required>
+                    <input type="text" id="username" name="username" placeholder="Usuário" required>
                 
                     <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" required min="8">
-                
-                    <button type="submit">Entrar</button>
-                    <a href="#">Esqueceu a senha?</a>
+                    <input type="password" id="password" name="password" placeholder="Senha" required min="8">
                 </form>
             </div>
+            <button type="submit">Entrar</button>
+            <a href="#">Esqueceu a senha?</a>
         </section>
     </main>
 </body>
