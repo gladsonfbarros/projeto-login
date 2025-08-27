@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #5f2c82;
+    background-color: #3899a2;
     height: 100vh;
     width: 100vw;
 }
@@ -30,6 +30,9 @@ section#login {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.473);
+
+    transition: width .5s, height .5s;
+    transition-timing-function: ease;
 }
 
 section#login div#img {
@@ -68,20 +71,24 @@ section#login input {
 }
 
 button {
+    display: inline-block;
     width: 50%;
     transform: translate(50%);
     margin-top: 10px;
     height: 40px;
     border: none;
     border-radius: 20px;
-    background-color: #5f2c82;
+    background-color: #e1273f;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
 }
 
 a {
-    display: block;
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    transform: translate(50%);
     margin-top: 5px;
     text-align: center;
     text-decoration: none;
