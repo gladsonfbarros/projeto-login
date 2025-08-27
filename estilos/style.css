@@ -37,8 +37,8 @@ section#login {
 
 section#login div#img {
     display: block;
-    background: #5f2c82 url(../imagens/login.jpg) no-repeat center;
     height: 200px;
+    background: #5f2c82 url(../imagens/login.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -46,56 +46,63 @@ section#login div#form {
     display: block;
 }
 
-section#login h1 {
+div#form h1 {
     text-align: center;
-    padding: 10px;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 section#login p {
     text-align: center;
-    padding: 0 20px 20px 20px;
+    margin: 0 20px 10px 20px;
     font-size: 14px;
-    color: #555;
+    color: #444343;
 }
 
-section#login div form {
-    display: flex;
+section#login div.inputBox {
+    display: block;
     flex-direction: column;
-    padding: 0 20px;
+    margin: 10px 0;
+}
+
+section#login i.material-icons {
+    position: absolute;
+    font-size: 1.9em;
+    cursor: default;
 }
 
 section#login input {
-    padding-left: 10px;
-    height: 30px;
+    height: 35px;
+    width: 80%;
+    margin-left: 30px;
     border: 1px solid black;
     border-radius: 8px;
+    padding-left: 10px;
 }
 
 button {
-    display: inline-block;
+    display: block;
+    position: relative;
+    height: 35px;
     width: 50%;
-    transform: translate(50%);
-    margin-top: 10px;
-    height: 40px;
+    font-size: 1.2em;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: rgb(199, 12, 12);
+    color: white;
     border: none;
-    border-radius: 20px;
-    background-color: #e1273f;
-    color: #fff;
-    font-size: 16px;
     cursor: pointer;
 }
 
 a {
-    display: inline-block;
-    position: relative;
-    width: 50%;
-    transform: translate(50%);
-    margin-top: 5px;
+    display: block;
     text-align: center;
+    margin-top: 15px;
     text-decoration: none;
     color: black;
-    cursor: pointer;
 }
 
 a:hover {
     text-decoration: underline;
+    color: rgb(199, 12, 12);
 }
