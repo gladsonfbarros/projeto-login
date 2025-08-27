@@ -45,6 +45,7 @@ section#login div#img {
 section#login div#form {
     display: block;
     padding: 10px;
+    overflow: auto;
 }
 
 div#form h1 {
@@ -61,6 +62,7 @@ section#login p {
 
 section#login div.inputBox {
     display: block;
+    position: relative;
     flex-direction: column;
     margin: 10px 0;
 }
@@ -69,6 +71,10 @@ section#login i.material-icons {
     position: absolute;
     font-size: 1.9em;
     cursor: default;
+}
+
+div.inputBox label {
+    display: none;
 }
 
 section#login input {
@@ -82,17 +88,22 @@ section#login input {
 
 button {
     display: block;
-    position: relative;
-    height: 35px;
-    width: 50%;
-    font-size: 1.2em;
+    height: 40px;
+    width: 80%;
+    font-size: 1em;
     margin: auto;
     margin-top: 20px;
-    border-radius: 30px;
+    border-radius: 15px;
     background-color: rgb(199, 12, 12);
     color: white;
     border: none;
     cursor: pointer;
+    transition: background-color .4s;
+}
+
+button:hover {
+    background-color: rgb(245, 49, 49);
+    transform: translateY(-2px);
 }
 
 main a {
